@@ -30,3 +30,6 @@ spec:
           items:
           - key: wp-config.php
             path: wp-config.php
+          
+
+

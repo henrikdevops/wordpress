@@ -1,16 +1,15 @@
----
 apiVersion: v1
 kind: Service
 metadata:
   creationTimestamp: "2024-11-18T13:17:41Z"
   name: wordpress
-  namespace: henrikdevops
+  namespace: jonas-was-here
   resourceVersion: "2952247"
   uid: 213b0a5c-5a75-4dee-be29-bed04de64a63
 spec:
-  clusterIP: 172.30.119.171
+  clusterIP: 172.30.119.172
   clusterIPs:
-  - 172.30.119.171
+  - 172.30.119.172
   internalTrafficPolicy: Cluster
   ipFamilies:
   - IPv4

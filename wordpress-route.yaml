@@ -1,14 +1,13 @@
----
 apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
   creationTimestamp: "2024-11-18T13:27:06Z"
   name: wordpress
-  namespace: henrikdevops
+  namespace: jonas-was-here
   resourceVersion: "2953771"
   uid: 86262840-5d2d-414d-b1e5-22bfd026c443
 spec:
-  host: henrikdevops.apps.cluster1.karoshi.se
+  host: datasmurfan.cloud2.se
   port:
     targetPort: 8080
   to:
@@ -22,7 +21,7 @@ status:
     - lastTransitionTime: "2024-11-18T13:27:06Z"
       status: "True"
       type: Admitted
-    host: henrikdevops.apps.cluster1.karoshi.se
-    routerCanonicalHostname: router-default.apps.cluster1.karoshi.se
+    host: datasmurfan.cloud2.se
+    routerCanonicalHostname: router-default.apps.cluster3.karoshi.se
     routerName: default
     wildcardPolicy: None
