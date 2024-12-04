@@ -5,9 +5,9 @@ items:
   metadata:
     name: mariadb
   spec:
-    clusterIP: 172.30.67.134
+    clusterIP: 
     clusterIPs:
-    - 172.30.67.134
+    - 
     internalTrafficPolicy: Cluster
     ipFamilies:
     - IPv4
