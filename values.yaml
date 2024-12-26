@@ -1,8 +1,0 @@
-global:
-  GLOBAL_VERSION: "latest"
-
-commercialinvoice:
-  image:
-    repository: quay.io/henrikdevops/wordpress-v2
-    tag: "v2.0.0"
-
