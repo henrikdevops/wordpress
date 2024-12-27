@@ -24,4 +24,4 @@ You need to create the PVC, and then mount it as /data. Start the Wordpress pod 
 
 Delete the wordpress pod and change Deployment configuration so it volume mounts the pvc in /opt/app-root/src/ folder instead.
 
-
+iii
