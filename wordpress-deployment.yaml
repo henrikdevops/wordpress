@@ -1,4 +1,3 @@
----
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -15,7 +14,7 @@ spec:
     spec:
       containers:
       - name: wordpress-app
-        image: quay.io/henrikdevops/wordpress-v2:latest
+        image: quay.io/henrikdevops/wordpress-v2
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
@@ -35,17 +34,4 @@ spec:
       - name: wordpress-data
         persistentVolumeClaim:
           claimName: wordpress-pvc
-
-#example på om du vill låta jenkins refresha :
-
-#    spec:
-#      containers:
-#        
-#name: app
-#       image: {{ .Values.commercialinvoice.image.repository }}:{{ default .Values.global.GLOBAL_VERSION .Values.commercialinvoice.image.tag }}
-#        imagePullPolicy: Always
-#
-#        imagePullPolicy gör att om du startar om deploymenten så hämtas senaste docker hashen
-#på den versionen du har deployat
-
 
