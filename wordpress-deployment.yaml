@@ -20,7 +20,7 @@ spec:
         - containerPort: 8080
         volumeMounts:
         - name: wordpress-data
-          mountPath: /opt/app-root/src
+          mountPath: /ops/app-root/src
         - name: wp-config-file
           mountPath: /opt/app-root/src/wp-config.php
           subPath: wp-config.php
@@ -34,4 +34,3 @@ spec:
       - name: wordpress-data
         persistentVolumeClaim:
           claimName: wordpress-pvc
-
