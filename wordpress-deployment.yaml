@@ -2,8 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: wordpress
-  annotations:
-    image.openshift.io/triggers: '[{"from":{"kind":"ImageStreamTag","name":"wordpress-stream:latest"},"fieldPath":"spec.template.spec.containers[?(@.name==\"wordpress-app\")].image"}]'
 spec:
   replicas: 1
   selector:
