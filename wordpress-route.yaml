@@ -4,7 +4,7 @@ kind: Route
 metadata:
   name: wordpress
 spec:
-  host: henrikdevops.apps.cluster1.karoshi.se
+  host: henrikdevops.apps.cluster5.karoshi.se
   port:
     targetPort: 8080
   to:
