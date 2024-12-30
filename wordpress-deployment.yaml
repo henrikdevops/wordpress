@@ -22,7 +22,7 @@ spec:
         - name: wordpress-data
           mountPath: /data
         - name: wp-config-file
-          mountPath: /var/www/html/wordpress/wp-config.php
+          mountPath: /var/www/html/wordpress/wp-config.php   #Detta görs för att jag kör eriks dockerfile
           subPath: wp-config.php
       volumes:
       - name: wp-config-file
