@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: wordpress-app
-        image: quay.io/henrikdevops/wordpress-v2
+        image: docker.io/devopshenrik/dockerfile
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
