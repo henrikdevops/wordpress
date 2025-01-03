@@ -9,7 +9,7 @@ spec:
   - annotations: null
     from:
       kind: DockerImage
-      name: docker.io/devopshenrik/dockerfile
+      name: quay.io/henrikdevops/wordpress-v2:latest
     importPolicy:
       importMode: Legacy
       scheduled: true
